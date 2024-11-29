@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StockWise App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>StockWise</h1>
+    </header>
+
+    <!-- Add New Item -->
+    <div class="add-item-section">
+      <input type="text" id="new-item-name" placeholder="Item Name" />
+      <input type="number" id="new-item-quantity" placeholder="Quantity" min="0" />
+      <button onclick="addItem()">Add Item</button>
+    </div>
+
+    <!-- Search and Sort -->
+    <div class="search-sort-bar">
+      <input type="text" id="search-input" placeholder="Search inventory..." oninput="searchInventory()" />
+      <select id="sort-options" onchange="sortInventory()">
+        <option value="default">Sort By</option>
+        <option value="name">Name</option>
+        <option value="low-to-high">Stock: Low to High</option>
+        <option value="high-to-low">Stock: High to Low</option>
+      </select>
+    </div>
+    <div id="search-results" class="search-results"></div>
+
+    <!-- Inventory List -->
+    <div id="inventory-list">
+      <!-- Stock items will be dynamically inserted here -->
+    </div>
+
+    <footer>
+      <p>&copy; 2024 StockWise - Inventory Made Easy</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

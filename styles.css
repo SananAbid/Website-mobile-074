@@ -1,0 +1,101 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #b3e6ff;
+}
+
+.container {
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 2em;
+  color: #005a9c;
+}
+
+.add-item-section,
+.search-sort-bar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.add-item-section input,
+.search-sort-bar input {
+  padding: 10px;
+  font-size: 1em;
+  flex-grow: 1;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px;
+  font-size: 1em;
+  background-color: #005a9c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #003f6b;
+}
+
+#inventory-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.stock-card {
+  padding: 15px;
+  border-radius: 8px;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+
+.low-stock {
+  background-color: #ff4d4d;
+}
+
+.medium-stock {
+  background-color: #ffcc00;
+}
+
+.good-stock {
+  background-color: #00cc66;
+}
+
+button.card-action {
+  padding: 5px 10px;
+  background-color: #005a9c;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button.card-action:hover {
+  background-color: #003f6b;
+}
+
+.search-results {
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: #333;
+}
